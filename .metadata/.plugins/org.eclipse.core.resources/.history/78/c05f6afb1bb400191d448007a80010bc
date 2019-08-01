@@ -1,0 +1,19 @@
+package leonz2code.org.colecciones;
+
+import java.util.ArrayList;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ArrayList<String> list1 = new ArrayList();
+		
+		list1.add("Jhon");
+				
+				
+		
+
+	}
+
+}
