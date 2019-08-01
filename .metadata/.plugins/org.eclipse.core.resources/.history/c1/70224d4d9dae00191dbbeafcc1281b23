@@ -1,0 +1,13 @@
+package leonz2code.org.hilos;
+
+public class TestThread {
+	
+	public static void main(String[] args) {
+		
+		PrintDemo PD = new PrintDemo(); // CREAMOS UN OBJETO (INSTANCIA) DE LA CLASE PrintDemo
+		
+		ThreadDemo T1 = new ThreadDemo( "Primer Hilo " , PD);
+	}
+
+
+}

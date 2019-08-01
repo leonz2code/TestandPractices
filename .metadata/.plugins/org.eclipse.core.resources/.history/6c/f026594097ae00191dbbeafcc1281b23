@@ -1,0 +1,17 @@
+package leonz2code.org.hilos;
+
+public class PrintDemo {
+	public void printCount() {
+		
+		try {
+			for(int i = 5; i > 0; i -- ) {
+				System.out.println("Counter    ----    " + i);
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			//e.printStackTrace();
+			System.out.println("Thread interrupted");
+		}
+		
+	}
+}
