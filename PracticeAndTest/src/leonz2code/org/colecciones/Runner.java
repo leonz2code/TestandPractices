@@ -52,6 +52,9 @@ public class Runner {
 		
 		System.out.println("prueva de git ignore");
 		System.out.println("y sigue sin pelarme 3");
+		System.out.println("Porfing .gitignore esta funcionando , no olvidad que ignorar un elemento en la creacion del proyecto no se puede");
+		System.out.println("hay que borrarlo hacer commit y ya despues se puede ignorar si se necesita ponerlo en local asi ya lo podemos ignorar");
+		System.out.println("la cosa es que no este en el repositorio de github(internet) si esta alli, no se puede ignorar ");
 
 	}
 
