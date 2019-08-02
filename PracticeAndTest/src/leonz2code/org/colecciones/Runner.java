@@ -43,7 +43,7 @@ public class Runner {
 			System.out.println(i);
 		}
 				
-		System.out.println("Object ArrayList Below");
+		System.out.println("Object ArrayList Below hey");
 		
 		for (Object i : list2) {
 			
@@ -51,7 +51,7 @@ public class Runner {
 		}
 		
 		System.out.println("prueva de git ignore");
-		System.out.println("y sigue sin pelarme 2");
+		System.out.println("y sigue sin pelarme 3");
 
 	}
 

@@ -1,4 +1,1 @@
-# ignore all index
-*.index
-# ignore all class
-*.class
+.metadata/.log
