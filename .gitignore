@@ -1,5 +1,5 @@
 $ git status
-**/CodeBase1/.metadata
+metadata/
     [...]
     # Untracked files:
     [...]

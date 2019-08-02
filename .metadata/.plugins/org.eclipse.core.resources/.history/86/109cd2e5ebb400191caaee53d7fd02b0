@@ -51,7 +51,6 @@ public class Runner {
 		}
 		
 		System.out.println("prueva de git ignore");
-		System.out.println("y sigue sin pelarme");
 
 	}
 
