@@ -1,6 +1,7 @@
 package leonz2code.org.colecciones;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Runner {
 
@@ -22,7 +23,7 @@ public class Runner {
 		list1.add("smith");
 		list1.add("Jhon1");
 		list1.add("Jhon2");
-		list1.add("Jhon3");
+		list1.add("Jack");
 		list1.add("Jhon4");
 		list1.add("Jhon5");
 		list1.add("Jhon6");
@@ -39,6 +40,7 @@ public class Runner {
 		list2.add(s1);
 		list2.add(s1.code);
 		
+		// Iterate in ArrayList
 		for (String i : list1) {
 			System.out.println(i);
 		}
@@ -49,6 +51,29 @@ public class Runner {
 			
 			System.out.println(i);
 		}
+		
+		// Iterate in ArrayList with Iterator
+		System.out.println("=====Iterating with Iterator=====");
+		Iterator<String> itr = list1.iterator();
+		/*System.out.println(itr.next());
+		System.out.println(itr.next()); THIS RETREIVE ELEMENTS ONE BY ONE
+		System.out.println(itr.next());*/
+		
+		while(itr.hasNext()) {
+			String str = itr.next();
+			System.out.println(str);
+			
+			// remove element with iterator
+			
+			if(str.equals("Jack")){
+				
+				itr.remove(); // Jack se va es un void method
+			}
+			
+		}
+		
+		System.out.println("=========Iterator end ===========");
+		System.out.println("list1 after iteration is: "+list1);
 		
 		System.out.println("prueva de git ignore");
 		System.out.println("y sigue sin pelarme 3");
@@ -77,9 +102,17 @@ public class Runner {
 		System.out.println("list1 after remove is: " +list1);
 		
 		
-		//list1.clear(); -> remove
+		//list1.clear(); -> remove   
 		
+		//ASI SON TAMBIEN LinkedList y Vector 
 		
+		// locate element in arraylist
+		if(list1.contains("Jhon")) {
+			System.out.println("yes Jhon is in the list1 ");
+		}
+		
+	
+				
 	}
 
 }
