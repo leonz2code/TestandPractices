@@ -56,6 +56,30 @@ public class Runner {
 		System.out.println("hay que borrarlo hacer commit y ya despues se puede ignorar si se necesita ponerlo en local asi ya lo podemos ignorar");
 		System.out.println("la cosa es que no este en el repositorio de github(internet) si esta alli, no se puede ignorar ");
 
+		// Print reference to list -> shall print elements in the list the way we added in a sequence
+		System.out.println("list1 is: "+list1);
+		System.out.println("list1 is: "+list2);
+		
+		// 2. Get the element from list
+		
+		String name = list1.get(2);
+		System.out.println("name is: " +name);
+		
+		Object o = list2.get(2);
+		System.out.println("o is: "+o);
+		
+		// 3. Update Element in List
+		list1.set(2,"Fionna");
+		System.out.println("list 1 now is: " + list1);
+		
+		// 4. Remove element from list
+		list1.remove(2);
+		System.out.println("list1 after remove is: " +list1);
+		
+		
+		//list1.clear(); -> remove
+		
+		
 	}
 
 }
