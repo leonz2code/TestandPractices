@@ -22,6 +22,7 @@ System.out.println("===================UTILIZANDO UN HashMap====================
 	//	java.util.Iterator<Integer> it = map.keySet().iterator();		// DUDA POR QUE LO PUSO ASI SI SE IMPORTO java.util.*;
 		
 		Iterator<Integer> it = map.keySet().iterator();
+		Iterator it2 = map.entrySet().iterator();
 		
 		while(it.hasNext()){
 		  Integer key = it.next();
@@ -66,7 +67,26 @@ while(it.hasNext()){
 System.out.println("============El resultado que tenemos es el siguiente en el que vemos que nos ordena "
 		+ "los objetos tal y como los hemos ido introduciendo:==================");
 
+System.out.println("========Utilizando map<String,String> nos da por salida ===========");
+Map<String, String> treeMap2 = new TreeMap<String, String>();
+treeMap2.put("1", "Casillas");	treeMap2.put("15", "Ramos");
+treeMap2.put("3", "Pique");	treeMap2.put("c", "Puyol");
+treeMap2.put("11", "Capdevila");	treeMap2.put("14", "Xabi Alonso");
+treeMap2.put("a", "Busquets");	treeMap2.put("8", "Xavi Hernandez");
+treeMap2.put("18", "Pedrito");	treeMap2.put("d", "Iniesta");
+treeMap2.put("7", "Villa");
 
+// Imprimimos el Map con un Iterador que ya hemos instanciado anteriormente
+//it2 = treeMap2.entrySet().iterator();
+
+for (Map.Entry<String, String> entry : treeMap2.entrySet()) {
+	
+	System.out.println(entry.getKey() + "--> " + entry.getValue());
+	
+}
+
+
+System.out.println("========Utilizando map<String,String> nos da por salida ===========");
 
 }
 }
